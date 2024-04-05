@@ -7,16 +7,13 @@ function HomePage() {
       <Container>
         <div className="space-y-6">
           <h1 className="text-2xl font-bold">
-            Hey, I'm a Senior Software Engineer at Company. I enjoy working with
-            Next.js and crafting beautiful front-end experiences.
+            Hola! Mi nombre es Nicolás Nuccelli, soy desarrollador fullstack, vivo en Sierra de la Ventana y este es un blog dedicado a las aventuras que se pueden realizar en la comarca serrana.
           </h1>
           <p>
-            This portfolio is built with Next.js and a library called next-mdx.
-            It allows you to write Markdown and focus on the content of your
-            portfolio.
+            Si te gustaria agregar alguna aventura a este blog para que mas gente conozca los distintos lugares para visitar escribime a: <a href="mailto:nuccelli87@gmail.com">nuccelli87@gmail.com</a> 
           </p>
 
-          <p>Deploy your own in a few minutes.</p>
+          <p>Veni a disfrutar de la naturaleza y la paz de las sierras.</p>
         </div>
       </Container>
 

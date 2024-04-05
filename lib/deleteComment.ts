@@ -24,7 +24,7 @@ export default async function deleteComments(
     // verify user token
     const user: User = await getUser(authorization);
     if (!user) return res.status(400).json({ message: "Invalid token." });
-    comment.user.email = user.email;
+   // comment.user.email = user.email;
 
     const isAdmin = process.env.NEXT_PUBLIC_AUTH0_ADMIN_EMAIL === user.email;
     const isAuthor = user.sub === comment.user.sub;

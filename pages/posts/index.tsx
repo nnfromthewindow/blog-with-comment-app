@@ -26,7 +26,7 @@ export default function NotePage({
           </article>
         ))
       ) : (
-        <p>No blog posted yet :/</p>
+        <p>Todavia no se posteo nada :/</p>
       )}
     </Container>
   );

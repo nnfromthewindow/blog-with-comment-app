@@ -20,7 +20,7 @@ export default async function fetchComment(
     // string data to object
     const comments = rawComments.map((c) => {
       const comment: Comment = JSON.parse(c);
-      delete comment.user.email;
+     // delete comment.user.email;
       return comment;
     });
 

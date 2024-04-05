@@ -20,11 +20,11 @@ export default function PostPage({
   return (
     <Container>
       <Head>
-        <title>{post.title} | My awesome blog</title>
+        <title>{post.title} | Aventuras en Sierra de la Ventana</title>
       </Head>
 
       {router.isFallback ? (
-        <div>Loading…</div>
+        <div>Cargando…</div>
       ) : (
         <div>
           <article>
