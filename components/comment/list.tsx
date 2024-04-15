@@ -33,7 +33,7 @@ export default function CommentList({ comments, onDelete }: CommentListProps) {
               <div className="flex-grow">
                 <div className="flex space-x-2">
                   <b>{comment.user.name}</b>
-                  <time className="text-gray-400">
+                  <time className="text-gray-700">
                     {distanceToNow(comment.created_at)}
                   </time>
                   {(isAdmin || isAuthor) && (

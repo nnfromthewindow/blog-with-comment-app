@@ -2,7 +2,8 @@ import type { InferGetStaticPropsType } from "next";
 import { useRouter } from "next/router";
 import ErrorPage from "next/error";
 import Comment from "../../components/comment";
-import Container from "../../components/container";
+import PostsContainer from "../../components/postsContainer";
+import SlugContainer from "../../components/slugContainer";
 import distanceToNow from "../../lib/dateRelative";
 import { getAllPosts, getPostBySlug } from "../../lib/getPost";
 import markdownToHtml from "../../lib/markdownToHtml";
@@ -18,7 +19,7 @@ export default function PostPage({
   }
 
   return (
-    <Container>
+    <SlugContainer>
       <Head>
         <title>{post.title} | Aventuras en Sierra de la Ventana</title>
       </Head>
@@ -33,7 +34,7 @@ export default function PostPage({
               {post.excerpt ? (
                 <p className="mt-2 text-xl">{post.excerpt}</p>
               ) : null}
-              <time className="flex mt-2 text-gray-400">
+              <time className="flex mt-2 text-gray-700">
                 {distanceToNow(new Date(post.date))}
               </time>
             </header>
@@ -47,7 +48,7 @@ export default function PostPage({
           <Comment />
         </div>
       )}
-    </Container>
+    </SlugContainer>
   );
 }
 

@@ -5,7 +5,7 @@ function HomePage() {
   return (
     <>
       <Container>
-        <div className="space-y-6">
+        <div className="space-y-6 bg-gray-100 bg-opacity-50 rounded-md">
           <h1 className="text-2xl font-bold">
             Hola! Mi nombre es Nicolás Nuccelli, soy desarrollador fullstack, vivo en Sierra de la Ventana y este es un blog dedicado a las aventuras que se pueden realizar en la comarca serrana.
           </h1>
