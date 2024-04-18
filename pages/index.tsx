@@ -5,16 +5,22 @@ function HomePage() {
   return (
     <>
       <Container>
-        <div className="space-y-6 bg-gray-100 bg-opacity-50 rounded-md">
+        <div className="overflow-y-auto h-[70vh]">
+        <div className="space-y-6 bg-gray-100 bg-opacity-50 rounded-md py-10 ">
           <h1 className="text-2xl font-bold">
-            Hola! Mi nombre es Nicolás Nuccelli, soy desarrollador fullstack, vivo en Sierra de la Ventana y este es un blog dedicado a las aventuras que se pueden realizar en la comarca serrana.
+¡Hola aventureros! Soy Nicolás Nuccelli, un apasionado desarrollador fullstack que ha encontrado su hogar en Sierra de la Ventana. Este blog está dedicado a todas las emocionantes aventuras que se pueden experimentar en esta impresionante comarca serrana.
           </h1>
           <p>
-            Si te gustaria agregar alguna aventura a este blog para que mas gente conozca los distintos lugares para visitar escribime a: <a href="mailto:nuccelli87@gmail.com">nuccelli87@gmail.com</a> 
+          Si tienes alguna aventura en mente que crees que debería estar en este blog para que más personas puedan descubrir los maravillosos lugares que tenemos para ofrecer, ¡no dudes en escribirme a <a href="mailto:nuccelli87@gmail.com">nuccelli87@gmail.com</a>
           </p>
 
-          <p>Veni a disfrutar de la naturaleza y la paz de las sierras.</p>
+          <p>¡Ven y sumérgete en la naturaleza y la tranquilidad de las sierras!
+          </p>
+                                        
         </div>
+        </div>
+      
+     
       </Container>
 
       

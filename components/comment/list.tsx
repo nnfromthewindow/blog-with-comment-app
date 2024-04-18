@@ -38,7 +38,7 @@ export default function CommentList({ comments, onDelete }: CommentListProps) {
                   </time>
                   {(isAdmin || isAuthor) && (
                     <button
-                      className="text-gray-400 hover:text-red-500"
+                      className="text-red-500 hover:text-red-700"
                       onClick={() => onDelete(comment)}
                       aria-label="Close"
                     >

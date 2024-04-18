@@ -6,8 +6,8 @@ export default function Header() {
     <header className="py-6">
       <Container>
         <nav className="flex space-x-4">
-          <Link href="/">Home</Link>
-          <Link href="/posts">Aventuras</Link>
+          <Link className="hover:text-gray-600 transition [text-shadow:_1px_1px_5px_rgb(0_0_0_/_40%)]" href="/">Home</Link>
+          <Link className="hover:text-gray-600 transition [text-shadow:_1px_1px_5px_rgb(0_0_0_/_40%)]" href="/posts">Aventuras</Link>
         </nav>
       </Container>
     </header>

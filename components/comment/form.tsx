@@ -35,7 +35,7 @@ export default function CommentForm({
               Enviar
             </button>
             <button
-              className="text-gray-500"
+              className="text-gray-500 hover:text-red-500"
               onClick={() => logout({ returnTo: window.location.origin })}
             >
               Log Out

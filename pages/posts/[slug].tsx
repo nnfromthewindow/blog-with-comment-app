@@ -2,7 +2,6 @@ import type { InferGetStaticPropsType } from "next";
 import { useRouter } from "next/router";
 import ErrorPage from "next/error";
 import Comment from "../../components/comment";
-import PostsContainer from "../../components/postsContainer";
 import SlugContainer from "../../components/slugContainer";
 import distanceToNow from "../../lib/dateRelative";
 import { getAllPosts, getPostBySlug } from "../../lib/getPost";
@@ -13,6 +12,7 @@ export default function PostPage({
   post,
 }: InferGetStaticPropsType<typeof getStaticProps>) {
   const router = useRouter();
+  const title = `${post.title} | Aventuras en Sierra de la Ventana`
 
   if (!router.isFallback && !post?.slug) {
     return <ErrorPage statusCode={404} />;
@@ -20,8 +20,9 @@ export default function PostPage({
 
   return (
     <SlugContainer>
+      
       <Head>
-        <title>{post.title} | Aventuras en Sierra de la Ventana</title>
+        <title>{title}</title>
       </Head>
 
       {router.isFallback ? (
