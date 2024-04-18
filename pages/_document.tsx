@@ -8,7 +8,7 @@ export default function Document() {
         <meta name="robots" content="follow, index" />
         <meta httpEquiv="x-ua-compatible" content="ie=edge" />
       </Head>
-      <body className="bg-[url('/hero.png')] bg-cover h-screen bg-no-repeat h-full text-gray-700 antialiased">
+      <body className="bg-[url('/hero.png')] bg-cover bg-no-repeat h-[92vh] text-gray-700 antialiased">
         <Main />
         <NextScript />
       </body>
